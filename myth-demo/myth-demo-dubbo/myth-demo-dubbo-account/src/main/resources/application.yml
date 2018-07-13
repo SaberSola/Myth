@@ -1,0 +1,58 @@
+server:
+  port: 8082
+  contextPath: /
+  address: 0.0.0.0
+
+spring:
+    datasource:
+        driver-class-name:  com.mysql.jdbc.Driver
+        url: jdbc:mysql://10.4.4.202:3306/myth_account?useUnicode=true&characterEncoding=utf8
+        username: root
+        password: 123123
+    #activemq:
+    #   broker-url: tcp://120.76.52.162:61616
+    #   user: happylife
+    #   password: happylifeplat01
+    #   trust-all: true
+    #rabbitmq:
+    #    host: localhost
+    #    port: 5672
+    #    username: guest
+    #    password: guest
+    aliyunmq:
+        broker-url: http://onsaddr-internet.aliyun.com/rocketmq/nsaddr4client-internet
+        accessKey: LTAI44DGK0oAutoj
+        secretKey: RBXTnPSVxHYfrn2IFFoVtgExZdw1M2
+        topic: ORDER_FLOW_BQ
+        consumerId: CID_ORDER_FLOW_BQ_ACCOUNT
+#    rocketmq:
+#            namesrvAddr: localhost:9876
+#            consumerGroupName: CID_ORDER_FLOW_BQ_ACCOUNT
+#            instanceName: ORDER_FLOW_BQ_CONSUMER
+#            topic: ORDER_FLOW_BQ
+    #kafka:
+      #  consumer:
+      #     bootstrap-servers: localhost:9092
+      #     group-id: test
+      #     auto-offset-reset: earliest
+      #     enable-auto-commit: true
+      #     auto-commit-interval: 100
+      #    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #     value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+mybatis:
+  type-aliases-package: com.github.myth.demo.dubbo.account.api.entity
+  config-location: classpath:mybatis/mybatis-config.xml
+
+logging:
+    level:
+        root: error
+        org.springframework.web: info
+        org.apache.ibatis: info
+        com.github.myth.bonuspoint: info
+        com.github.myth.lottery: debug
+        com.github.myth: debug
+        io.netty: info
+
+    path: "./logs"
+
