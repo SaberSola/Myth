@@ -5,7 +5,7 @@
 
 
     <!-- 连接服务配置 -->
-    <rabbit:connection-factory id="connectionFactory" host="45.32.254.172"
+    <rabbit:connection-factory id="connectionFactory" host="**************"
                                username="mqadmin"
                                password="mqadmin" port="5672"
                                channel-cache-size="3"/>

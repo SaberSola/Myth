@@ -6,7 +6,7 @@ server:
 spring:
     datasource:
         driver-class-name:  com.mysql.jdbc.Driver
-        url: jdbc:mysql://45.32.254.172:3306/myth_stock?useUnicode=true&characterEncoding=utf8
+        url: jdbc:mysql://********:3306/myth_stock?useUnicode=true&characterEncoding=utf8
         username: admin
         password: admin
         platform: mysql
@@ -33,7 +33,7 @@ spring:
     #   password: happylifeplat01
     #   trust-all: true
     rabbitmq:
-      host: 45.32.254.172
+      host: :********
       port: 5672
       username: mqadmin
       password: mqadmin
@@ -66,7 +66,7 @@ com:
         repositorySupport : db
         mythDbConfig :
                  driverClassName  : com.mysql.jdbc.Driver
-                 url :  jdbc:mysql://45.32.254.172:3306/myth?useUnicode=true&amp;characterEncoding=utf8
+                 url :  jdbc:mysql://********:3306/myth?useUnicode=true&amp;characterEncoding=utf8
                  username : admin
                  password : admin
 

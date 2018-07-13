@@ -7,7 +7,7 @@ server:
 spring:
     datasource:
         driver-class-name:  com.mysql.jdbc.Driver
-        url: jdbc:mysql://45.32.254.172:3306/myth_account?useUnicode=true&characterEncoding=utf8
+        url: jdbc:mysql://********:3306/myth_account?useUnicode=true&characterEncoding=utf8
         username: admin
         password: admin
         initialSize: 20
@@ -32,7 +32,7 @@ spring:
         #   password: happylifeplat01
         #   trust-all: true
     rabbitmq:
-            host: 45.32.254.172
+            host: ********:
             port: 5672
             username: mqadmin
             password: mqadmin
@@ -66,11 +66,11 @@ com:
         repositorySupport : db
         mythDbConfig :
                  driverClassName  : com.mysql.jdbc.Driver
-                 url :  jdbc:mysql://45.32.254.172:3306/myth?useUnicode=true&amp;characterEncoding=utf8
+                 url :  jdbc:mysql://********::3306/myth?useUnicode=true&amp;characterEncoding=utf8
                  username : admin
                  password : admin
 #        repositorySupport : redis
-#                 hostName  : 45.32.254.172
+#                 hostName  : ********:
 #                 port : 6379
 #                 password :
 #        repositorySupport : redis
